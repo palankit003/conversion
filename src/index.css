@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Days One", sans-serif;
+}
+body {
+  background-color: #333;
+}
+select {
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+input {
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+}

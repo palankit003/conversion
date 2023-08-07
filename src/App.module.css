@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+}
+.quantity {
+  position: absolute;
+  color: white;
+  padding: 0.5rem;
+  top: 0;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #2c2c2c;
+}
