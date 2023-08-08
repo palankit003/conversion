@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Style from "./App.module.css";
 import ConversionApp from "./Component/ConversionApp";
+import twitterLogo from "./assets/twitter.png";
+import linkedinLogo from "./assets/linkedin.png";
 
 function App() {
   const [value, setValue] = useState(0);
@@ -44,6 +46,24 @@ function App() {
             primary={Quantity[value].primary}
             secondary={Quantity[value].secondary}
           />
+        </div>
+        <div className={Style.social}>
+          <div>
+            <img src={twitterLogo} alt="x.com" className={Style.twitterLogo} />{" "}
+            <a href="https://twitter.com/ankitpal003">
+              @ankitpal003<span className={Style.link}>⤤</span>
+            </a>
+          </div>
+          <div>
+            <img
+              src={linkedinLogo}
+              alt="linkedin"
+              className={Style.twitterLogo}
+            />{" "}
+            <a href="https://www.linkedin.com/in/ankitpal003">
+              ankitpal003<span className={Style.link}>⤤</span>
+            </a>
+          </div>
         </div>
       </main>
     </>

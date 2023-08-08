@@ -64,3 +64,22 @@
 .selected {
   color: orange;
 }
+.social {
+  position: absolute;
+  bottom: 2rem;
+}
+.social > div {
+  margin: 0.5rem 0;
+}
+.twitterLogo {
+  width: 2rem;
+  fill: black;
+}
+.link {
+  color: #3366ff;
+  font-weight: bold;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
