@@ -9,7 +9,7 @@ function App() {
     { name: "Volume", primary: "l", secondary: "ml" },
     { name: "Mass", primary: "kg", secondary: "g" },
     { name: "Time", primary: "min", secondary: "sec" },
-    { name: "Temperature", primary: "celsius", secondary: "fahrenheit" },
+    { name: "Temperature", primary: "C", secondary: "F" },
     { name: "Area", primary: "sqm", secondary: "sqcm" },
     { name: "Speed", primary: "mps", secondary: "kmph" },
     { name: "Energy", primary: "joule", secondary: "calorie" },
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <main className={Style.container}>
+      <main className={Style.container} data-theme={value}>
         <div className={Style.wrapper}>
           <select
             onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
@@ -27,7 +27,14 @@ function App() {
             className={Style.quantity}
           >
             {Quantity.map((e, index) => (
-              <option key={index} value={index}>
+              <option
+                key={index}
+                value={index}
+                className={`
+                ${Style.options}
+                  ${e.name === Quantity[value].name ? Style.selected : ""} 
+                `}
+              >
                 {e.name}
               </option>
             ))}

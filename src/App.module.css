@@ -1,9 +1,37 @@
+[data-theme="0"] {
+  --bgColor: linear-gradient(to bottom, #ffcccc, #ff99cc);
+}
+[data-theme="1"] {
+  --bgColor: linear-gradient(45deg, #66ccff, #99ccff);
+}
+[data-theme="2"] {
+  --bgColor: radial-gradient(circle, #ffcc99, #ff9966);
+}
+[data-theme="3"] {
+  --bgColor: linear-gradient(to right, #ffff99, #ffcc00);
+}
+[data-theme="4"] {
+  --bgColor: radial-gradient(circle at top left, #ff9999, #ff6666, #ff3333);
+}
+[data-theme="5"] {
+  --bgColor: linear-gradient(to bottom, #ffcc00, #ff6600, #ff3300);
+}
+[data-theme="6"] {
+  --bgColor: radial-gradient(ellipse at 70% 30%, #ccffcc, #66ff66);
+}
+[data-theme="7"] {
+  --bgColor: conic-gradient(#ffcc00, #ff3300, #ffcc00);
+}
+[data-theme="8"] {
+  --bgColor: linear-gradient(-45deg, #3366ff, #66ccff, #99ccff, #3366ff);
+}
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: var(--bgColor);
 }
 .wrapper {
   position: relative;
@@ -13,6 +41,11 @@
   background-color: rgba(255, 255, 255, 0.3);
   padding: 4rem 2rem;
   border-radius: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 30%;
+  }
 }
 .quantity {
   position: absolute;
@@ -24,4 +57,10 @@
   font-size: 1.5rem;
   text-align: center;
   background-color: #2c2c2c;
+}
+.options {
+  color: grey;
+}
+.selected {
+  color: orange;
 }
